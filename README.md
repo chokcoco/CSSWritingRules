@@ -8,7 +8,22 @@
 @charset "utf-8";
 ```
 
-> 注意，必须要在 CSS 文件所有字符的前面（包括编码注释），@charset 才会生效。
+> 注意，必须要在 CSS 文件**所有字符的前面**（包括编码注释），`@charset` 才会生效。
+
+例如，下面的例子都会使得 `@charset` 失效：
+
+```CSS
+/* 字符编码 */
+@charset "utf-8";
+```
+```CSS
+html,
+body {
+  height: 100%;
+}
+
+@charset "utf-8";
+```
 
 ## 命名空间规范
 
