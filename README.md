@@ -84,7 +84,8 @@ body {
 
 ## 样式属性顺序
 
-+ 同一 rule set 下的属性在书写时，应按功能进行分组，并以 Positioning Model > Box Model > Typographic > Visual 的顺序书写，以提高代码的可读性。
+同一 rule set 下的属性在书写时，应按功能进行分组，并以 Positioning Model > Box Model > Typographic > Visual 的顺序书写，以提高代码的可读性。
+
 + Positioning Model 布局方式、位置；相关属性包括：position / top / right / bottom / left / z-index / display / float / ...
 + Box Model 盒模型；相关属性包括：width / height / padding / margin / border / overflow / ...
 + Typographic 文本排版；相关属性包括：font / line-height / text-align / word-wrap / ...
