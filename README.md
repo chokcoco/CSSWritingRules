@@ -164,7 +164,7 @@ Positioning 处在第一位，因为他可以使一个元素脱离正常文本�
 }
 
 .g-header {
-  @extend %clearfix
+  @extend %clearfix;
 }
 ```
 
