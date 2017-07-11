@@ -176,5 +176,5 @@ Positioning 处在第一位，因为他可以使一个元素脱离正常文本�
 
 基于让 CSS 更简洁以及代码的复用考虑，采用上面的使用 `%placeholders` 定义，使用 `@extend` 引用的方案。
 
-+ `%placeholders`，只是一个占位符，只要不通过 `@extend` 调用，他是不会产生任何代码量
++ `%placeholders`，只是一个占位符，只要不通过 `@extend` 调用，编译后不会产生任何代码量
 + 使用 `@extend` 引用，则是因为每次调用相同的 `%placeholders` 时，编译出来相同的 CSS 样式会进行合并
