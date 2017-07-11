@@ -155,7 +155,7 @@ Positioning 处在第一位，因为他可以使一个元素脱离正常文本�
 
 ### 组件类的使用方法
 
-组件类使用 `%占位符` 定义，使用 `@extend` 引用。如：
+组件类使用 `%placeholders` 定义，使用 `@extend` 引用。如：
 
 ```SCSS
 %clearfix {
@@ -173,3 +173,8 @@ Positioning 处在第一位，因为他可以使一个元素脱离正常文本�
 使用 SASS ，经常会预先定义好一些常用公用组件类，譬如清除浮动，水平垂直居中，文字 ellipsis。
 
 那么是使用单独使用一个类定义，给需要的标签添加，还是使用 `@include` 或者 `@extend` 在定义的类中引入一个 `@mixin`，或者一个 `@function` 呢？
+
+基于让 CSS 更简洁以及代码的复用考虑，采用上面的使用 `%placeholders` 定义，使用 `@extend` 引用的方案。
+
++ `%placeholders`，只是一个占位符，只要不通过 `@extend` 调用，他是不会产生任何代码量
++ 使用 `@extend` 引用，则是因为每次调用相同的 `%placeholders` 时，编译出来相同的 CSS 样式会进行合并
