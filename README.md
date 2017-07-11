@@ -219,7 +219,9 @@ Positioning 处在第一位，因为他可以使一个元素脱离正常文本�
 + `.g-content .g-content-list li { }`
 + `.g-content .g-content-list .item { }`
 
+基于 CSS 选择器的解析规则（从右向左），建议使用上述第二种 `.g-content .g-content-list .item { }` ，避免使用通用标签名作为选择器的一环可以提高 CSS 匹配性能。
 
+> 浏览器的排版引擎解析 CSS 是基于从由向左（right-to-left）的规则，这么做是为了使样式规则能够更快地与渲染树上的节点匹配。
 
 
 
