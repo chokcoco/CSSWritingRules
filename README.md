@@ -152,3 +152,24 @@ Positioning 处在第一位，因为他可以使一个元素脱离正常文本�
 ### 嵌套层级规定
 
 使用 `SASS` 、 `LESS` 等预处理器时，建议嵌套层级不超过 3 层。
+
+### 组件类的使用方法
+
+组件类使用 `%占位符` 定义，使用 `@extend` 引用。如：
+
+```SCSS
+%clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+.g-header {
+  @extend %clearfix
+}
+```
+
+#### 组件类的思考
+
+使用 SASS ，经常会预先定义好一些常用公用组件类，譬如清除浮动，水平垂直居中，文字 ellipsis。
+
+那么是使用单独使用一个类定义，给需要的标签添加，还是使用 `@include` 或者 `@extend` 在定义的类中引入一个 `@mixin`，或者一个 `@function` 呢？
