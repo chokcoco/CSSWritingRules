@@ -178,3 +178,49 @@ Positioning 处在第一位，因为他可以使一个元素脱离正常文本�
 
 + `%placeholders`，只是一个占位符，只要不通过 `@extend` 调用，编译后不会产生任何代码量
 + 使用 `@extend` 引用，则是因为每次调用相同的 `%placeholders` 时，编译出来相同的 CSS 样式会进行合并（反之，如果使用 `@include` 调用定义好的 `@mixin`，编译出来相同的 CSS 样式不会进行合并）
+
+### 尽量避免使用标签名 
+
+使用 SASS ，或者说在 CSS 里也有这种困惑。
+
+假设我们有如下 html 结构：
+
+```html
+<div class="g-content">
+    <ul class="g-content-list">
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+    </ul>
+</div>
+```
+在给最里层的标签命名书写样式的时候，我们有两种选择：
+```SCSS
+.g-content {
+  .g-content-list {
+    li {
+      ...
+    }
+  }
+}
+```
+或者是
+```SCSS
+.g-content {
+  .g-content-list {
+    .item {
+      ...
+    }
+  }
+}
+```
+也就是，编译之后生成了下面这两个，到底使用哪个好呢？
++ `.g-content .g-content-list li { }`
++ `.g-content .g-content-list .item { }`
+
+
+
+
+
+
