@@ -71,21 +71,21 @@ body {
 
 + 当属性值或颜色参数为 0 - 1 之间的数时，省略小数点前的 0 。
 
-~~`color: rgba(255, 255, 255, 0.5)`~~
+  ~~`color: rgba(255, 255, 255, 0.5)`~~
 
-`color: rgba(255, 255, 255, .5);`
+  `color: rgba(255, 255, 255, .5);`
 
 + 当长度值为 0 时省略单位。
 
-~~```margin: 0px auto```~~
+  ~~```margin: 0px auto```~~
  
-`margin: 0 auto`
+  `margin: 0 auto`
 
 + 十六进制的颜色属性值使用小写和尽量简写。
 
-~~`color: #ffcc00`~~
+  ~~`color: #ffcc00`~~
 
-`color: #fc0`
+  `color: #fc0`
 
 ## 样式属性顺序
 
