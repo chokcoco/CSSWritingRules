@@ -65,7 +65,28 @@ body {
 + 规则声明块的右大括号 } 独占一行。
 + 每个规则声明间用空行分隔。
 + 所有最外层引号使用单引号 ' 。
-+ 当一个属性有多个属性值时，以逗号 , 分隔属性值，每个逗号后添加一个空格。
++ 当一个属性有多个属性值时，以逗号 , 分隔属性值，每个逗号后添加一个空格，当单个属性值过长时，每个属性值独占一行。
+
+完整示例如下：
+```
+.g-footer,
+.g-header {
+  position: relative;
+}
+
+.g-content {
+  background:
+    linear-gradient(135deg, deeppink 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, deeppink 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, deeppink 25%, transparent 25%),
+    linear-gradient(45deg, deeppink 25%, transparent 25%);
+  }
+
+.g-content::before {
+  content: '';
+}
+
+```
 
 ##  数值与单位
 
