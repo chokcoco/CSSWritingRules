@@ -112,13 +112,13 @@ body {
 
   ~~```margin: 0px auto```~~
  
-  `margin: 0 auto`
+  `margin: 0 auto;`
 
 + 十六进制的颜色属性值使用小写和尽量简写。
 
   ~~`color: #ffcc00`~~
 
-  `color: #fc0`
+  `color: #fc0;`
 
 ## 样式属性顺序
 
