@@ -111,8 +111,10 @@ body {
 + 当长度值为 0 时省略单位。
 
   ~~```margin: 0px auto```~~
+  ~~```left: 0```~~
  
-  `margin: 0 auto;`
+  ```margin: 0 auto;```
+  ```left: 0 auto;```
 
 + 十六进制的颜色属性值使用小写和尽量简写。
 
