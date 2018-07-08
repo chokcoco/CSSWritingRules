@@ -249,9 +249,7 @@ div {
 
 ### 尽量避免使用标签名 
 
-使用 SASS ，或者说在 CSS 里也有这种困惑。
-
-假设我们有如下 html 结构：
+使用 SASS ，或者说在 CSS 里也有这种困惑。假设我们有如下 html 结构：
 
 ```html
 <div class="g-content">
